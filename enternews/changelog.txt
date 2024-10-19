@@ -1,0 +1,99 @@
+### 2.4.0 - Aug 14 2024
+* Update - Icon improvement
+* Update - Block Style improvement
+* Update - Gaps improvement
+* Update - General design improvement
+
+### 2.3.5 - Mar 22 2024
+* New - Option to display homepage content to Frontpage
+* Option - Customize> Frontpage Options> Frontpage Layout Settings > Frontpage Content Display
+* Update - Icon improvement
+* Update - Block Style improvement
+* Update - Gaps improvement
+* Update - General design improvement
+
+### 2.3.4 - Feb 15 2024
+* Update - Block support for Appearnce Tools
+* Update - Block support for Padding
+* Update - Block support for Link Color
+* Update - Block support for Custom Units
+* Update - Block support for Custom Line Height
+* Update - Block support for Border
+* Fixed - Some styling glitch
+
+### 2.3.2 - Nov 24 2023
+* Update - WP 6.4 compatibility
+* Update - PHP 8 compatibility
+
+### 2.3.1 - May 22 2023
+* Update - WP 6.2 compatibility
+* Update - Block styling improvements
+* Update - RTL styling improvements
+* Fixed - Some styling glitch
+
+### 2.3.0 - Mar 16 2023
+* Update - Block styling improvements
+* Fixed - Some styling glitch
+
+### 2.2.1 - Nov 11 2022
+* Update - WP 6.1 compatibility
+* Fixed - Some styling glitch
+
+### 2.2.0 - Sept 08 2022
+* Update - RTL style improvements
+* Fixed - Some styling glitch
+
+### 2.1.0 - Aug 10 2022
+* Update - Multi-author support
+* Fixed - Some styling glitch
+
+### 2.0.0 - July 13 2022
+* Update - New theme dashboard with essential links
+* Update - New WP Compatibility
+* Update - Some design glitches
+
+### 1.1.3 - March 20 2022 
+* Fixes - Elementor gaps refinements
+* Fixes - Banner gaps refinements
+
+### 1.1.2 - Feb 23 2022 
+* Fixes - Some design glitches
+
+### 1.1.1 - Feb 05 2022 
+* Update - WordPress 5.9 compatibility
+
+### 1.1.0 - Sep 18 2021 
+* New - Elespare Compatibility
+* Fixes - Some design glitches
+
+### 1.0.8 - Sep 10 2021 
+* New - Elementor Compatibility
+* New - New WP Compatibility
+* Updates - Some notices glitches
+* Fixes - Some design glitches
+
+### 1.0.7 - April 22 2021 
+* Fixes - Some design glitches
+
+### 1.0.6 - April 20 2021 
+* Update - Added new social icons
+* Fixes - Some design glitches
+
+### 1.0.5 - April 06 2021 
+* Fixes - Original image width for post/page contents
+
+### 1.0.4 - Mar 29 2021 
+* Fixes - Some design glitches
+
+### 1.0.3 - Mar 19 2021 
+* Fixes - Some design glitches
+
+### 1.0.2 - Mar 18 2021 
+* Fixes - Optimized codes and templates
+* Fixes - Some design glitches
+
+### 1.0.1 - Mar 04 2021 
+* Fixes - Some design glitches
+
+### 1.0.0 - Feb 12 2021 
+* Initial release

@@ -597,7 +597,7 @@ function enternews_get_freatured_image_url($post_id, $size = 'enternews-featured
     $url = '';
     if (has_post_thumbnail($post_id)) {
         $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post_id), $size);
-        if(isset($thumb)){
+        if(isset($thumb['0'])){
             $url = $thumb['0'];
         }
     }

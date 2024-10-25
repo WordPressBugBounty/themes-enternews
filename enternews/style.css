@@ -6,7 +6,7 @@ Author URI: https://www.afthemes.com/
 Description: EnterNews is the best responsive News and Magazine WordPress Theme. To make a fantastic news website, the theme has a number of free starter sites with a single click import. The theme is completely widgetized, empowering users to control site content with 8+ custom widgets and widget areas. Also it includes default and dark color mode, allowing you to present articles and blog posts in a trendy manner. In addition, it comes with a variety of useful customizer options for creating a stunning newsportal. You can design it however you like and preview the changes using live customizer. It works with Gutenberg WordPress blocks and RTL, as well as the WooCommerce plugin, which helps you to combine an online store with our newspaper style. The theme is perfect for a news, newspaper, magazine, publishing, or review platform, and it's also useful for blogging. It's well-designed to get the website to the top of search engines, and users can get excellent assistance from the team if they run into any issues when using the theme. See more demos and documentaion at: https://afthemes.com/products/enternews/
 Requires PHP: 5.6
 Tested up to: 6.6
-Version: 2.4.0
+Version: 3.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: enternews
@@ -347,10 +347,11 @@ body.aft-dark-mode select option {
 h1, h2, h3, h4, h5, h6 {
     clear: both;
 }
+.wp-block-search__label,
 .min-read, .nav-tabs>li, .main-navigation ul li a, body .post-excerpt, .sidebar-area .social-widget-menu ul li a .screen-reader-text, .site-title, h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
 }
-
+.wp-block-search .wp-block-search__label,
 .site-title, h1, h2, h3, h4, h5, h6{
     font-weight: 600;
 }
@@ -2534,6 +2535,7 @@ input[type=search].wp-block-search__input {
     width: 25%;
     border: unset;
     line-height: 1;
+    padding: .375em .625em;
 }
 
 .wp-block-search__button.has-icon {
@@ -2842,7 +2844,7 @@ body.aft-has-background-image .af-main-banner-latest-posts {
     padding: 0 0 0 12px;
     text-transform: uppercase;
 }
-
+.wp-block-search__label,
 .wp-block-group .wp-block-comments-title,
 .wp-block-group .wp-block-heading{
     position: relative;
@@ -4279,10 +4281,32 @@ body.aft-default-mode .aft-blocks.aft-main-banner-section.data-bg .widget-title 
 .af-banner-carousel-1 .read-img.read-bg-img {
     height: 464px;
 }
+
+.aft-main-banner-wide .default .trending-posts,
+.aft-main-banner-wide .layout-2 .trending-posts,
+.aft-main-banner-wide .layout-3 .trending-posts,
+
+.aft-main-banner-wide .default .af-banner-carousel-1.default ,
+.aft-main-banner-wide .layout-2 .af-banner-carousel-1.default ,
+.aft-main-banner-wide .layout-3 .af-banner-carousel-1.default {
+    max-height: 464px;
+    overflow: hidden;
+}
 .aft-main-banner-wide .default .af-banner-carousel-1:not(.default) .read-img.read-bg-img ,
 .aft-main-banner-wide .layout-2 .af-banner-carousel-1:not(.default) .read-img.read-bg-img ,
 .aft-main-banner-wide .layout-3 .af-banner-carousel-1:not(.default) .read-img.read-bg-img {
     height: 440px;
+}
+
+.aft-main-banner-boxed .default .trending-posts,
+.aft-main-banner-boxed .layout-2 .trending-posts,
+.aft-main-banner-boxed .layout-3 .trending-posts,
+
+.aft-main-banner-boxed .default .af-banner-carousel-1 ,
+.aft-main-banner-boxed .layout-2 .af-banner-carousel-1 ,
+.aft-main-banner-boxed .layout-3 .af-banner-carousel-1 {
+    max-height: 404px;
+    overflow: hidden;
 }
 
 .aft-main-banner-boxed .default .af-banner-carousel-1 .read-img.read-bg-img ,
@@ -4294,14 +4318,42 @@ body.aft-default-mode .aft-blocks.aft-main-banner-section.data-bg .widget-title 
 .aft-main-banner-boxed .layout-9 .aft-main-banner .af-banner-carousel-1 .read-img.read-bg-img {
     height: 334px;
 }
-.aft-main-banner-wide .layout-8 .aft-main-banner .af-banner-carousel-1 .read-img.read-bg-img ,
+.aft-main-banner-boxed .layout-9 .aft-main-banner .af-banner-carousel-1{
+    max-height: 334px;
+}
+.aft-main-banner-wide .layout-9 .aft-main-banner .af-banner-carousel-1{
+    max-height: 464px;
+}
+.aft-main-banner-boxed .layout-8 .aft-main-banner .af-banner-carousel-1{
+    max-height: 334px;
+}
+.aft-main-banner-wide .layout-8 .aft-main-banner .af-banner-carousel-1 .read-img.read-bg-img {
+    height: 523px;
+}
+.aft-main-banner-wide .layout-8 .aft-main-banner .af-banner-carousel-1{
+    max-height: 523px;
+}
 .layout-5 .aft-main-banner .af-banner-carousel-1 .read-img.read-bg-img ,
 .layout-4 .aft-main-banner .af-banner-carousel-1 .read-img.read-bg-img {
-    height: 523px;
+    height: 516px;
+}
+.layout-5 .af-main-banner-trending-posts-vertical-carousel,
+.layout-4 .af-main-banner-trending-posts-vertical-carousel,
+.layout-5 .aft-main-banner .af-banner-carousel-1 ,
+.layout-4 .aft-main-banner .af-banner-carousel-1 {
+    max-height: 516px;
+    overflow: hidden;
+}
+.aft-main-banner-wide .layout-5 .af-main-banner-trending-posts,
+.aft-main-banner-wide .layout-4 .af-main-banner-trending-posts,
+.aft-main-banner-wide .layout-5 .aft-main-banner .af-banner-carousel-1.default ,
+.aft-main-banner-wide .layout-4 .aft-main-banner .af-banner-carousel-1.default {
+    max-height: 384px;
+    overflow: hidden;
 }
 .aft-main-banner-wide .layout-5 .aft-main-banner .af-banner-carousel-1.default .read-img.read-bg-img,
 .aft-main-banner-wide .layout-4 .aft-main-banner .af-banner-carousel-1.default .read-img.read-bg-img {
-    height: 389px;
+    height: 384px;
 }
 body .layout-5 .aft-main-banner .banner-carousel-slider.af-banner-carousel-1:not(.default) .read-img.read-bg-img ,
 body .layout-4 .aft-main-banner .banner-carousel-slider.af-banner-carousel-1:not(.default) .read-img.read-bg-img {
@@ -4318,11 +4370,17 @@ body.aft-main-banner-wide .layout-4 .aft-main-banner .af-banner-carousel-1:not(.
 body.aft-main-banner-wide .layout-6 .aft-main-banner .af-banner-carousel-1.default .read-img.read-bg-img {
     height: 434px;
 }
+body.aft-main-banner-wide .layout-6 .aft-main-banner .af-banner-carousel-1.default {
+    max-height: 434px;
+}
 body.aft-main-banner-wide .layout-6 .aft-main-banner .af-banner-carousel-1:not(.default) .read-img.read-bg-img {
     height: 410px;
 }
 body.aft-main-banner-boxed .layout-6 .aft-main-banner .af-banner-carousel-1.default .read-img.read-bg-img {
     height: 404px;
+}
+body.aft-main-banner-boxed .layout-6 .aft-main-banner .af-banner-carousel-1.default {
+    max-height: 404px;
 }
 body.aft-main-banner-boxed .layout-6 .aft-main-banner .af-banner-carousel-1:not(.default) .read-img.read-bg-img {
     height: 380px;
@@ -4411,7 +4469,10 @@ body.aft-main-banner-wide .aft-main-banner-section.layout-6 .af-editors-pick .fe
 .aft-main-banner-wide .layout-7 .aft-main-banner .af-editors-pick .small-gird-style .af-sec-post:nth-child(4){
     grid-column: 2/4;
 }
-
+.layout-7 .aft-main-banner .af-banner-carousel-1{
+    max-height: 532px;
+    overflow: hidden;
+}
 .layout-7 .aft-main-banner .af-banner-carousel-1 .read-img.read-bg-img {
     height: 532px;
 }
@@ -5391,13 +5452,13 @@ body.single-post span.min-read-post-format .af-post-format i:after{
 body.aft-dark-mode .entry-content > ul a,
 body.aft-dark-mode .entry-content > ol a,
 body.aft-dark-mode .entry-content > p a,
-body.aft-dark-mode .entry-content > [class*="wp-block-"] a:not(.has-text-color){
+.aft-dark-mode .entry-content > [class*="wp-block-"] a:not(.has-text-color){
     color: #fff;
 }
 body.aft-default-mode .entry-content > ul a,
 body.aft-default-mode .entry-content > ol a,
 body.aft-default-mode .entry-content > p a,
-body.aft-default-mode .entry-content > [class*="wp-block-"] a:not(.has-text-color){
+.aft-default-mode .entry-content > [class*="wp-block-"] a:not(.has-text-color){
     color: #404040;
 }
 .entry-content > [class*="wp-block-"] a:not(.has-text-color):hover,
@@ -7392,12 +7453,12 @@ body.aft-dark-mode:not(.alternative-sidebar-background) #secondary .textwidget a
 body.aft-dark-mode .entry-content > ul a:hover,
 body.aft-dark-mode .entry-content > ol a:hover,
 body.aft-dark-mode .entry-content > p a:hover,
-body.aft-dark-mode .entry-content > [class*="wp-block-"] a:not(.has-text-color):hover,
+.aft-dark-mode .entry-content > [class*="wp-block-"] a:not(.has-text-color):hover,
 body.aft-dark-mode a:hover,
 body.aft-default-mode .entry-content > ul a:hover,
 body.aft-default-mode .entry-content > ol a:hover,
 body.aft-default-mode .entry-content > p a:hover,
-body.aft-default-mode .entry-content > [class*="wp-block-"] a:not(.has-text-color):hover,
+.aft-default-mode .entry-content > [class*="wp-block-"] a:not(.has-text-color):hover,
 body a:hover{
     color: #0776C6;
 }
@@ -8113,6 +8174,7 @@ footer .banner-slider-2 .read-details {
 .aft-main-banner-section .widget-title .header-after {
     padding-top: 0;
 }
+.wp-block-search__label::before,
 .wp-block-group .wp-block-comments-title::before,
 .wp-block-group .wp-block-heading::before,
 .widget-title .header-after:before {
@@ -8129,6 +8191,7 @@ footer .banner-slider-2 .read-details {
     height: 15px;
     background-color: #0776C6;
 }
+body.aft-dark-mode .wp-block-search__label::before,
 body.aft-dark-mode .wp-block-group .wp-block-comments-title::before,
 body.aft-dark-mode .wp-block-group .wp-block-heading::before,
 body.aft-dark-mode .widget-title .category-color-1.header-after::before,
@@ -8138,6 +8201,27 @@ body.aft-dark-mode .widget-title .header-after:before {
 .af-container-row {
     margin-right: -6px;
     margin-left: -6px;
+}
+.wp-block-buttons>.wp-block-button a.wp-block-button__link:hover {
+    text-decoration: none;
+}
+body.aft-dark-mode .is-style-outline a.wp-block-button__link:not(.has-text-color), 
+body.aft-default-mode .is-style-outline a.wp-block-button__link:not(.has-text-color){
+    border-color:#0776C6;
+    color: #0776C6;
+}
+body.aft-dark-mode .is-style-outline a.wp-block-button__link:not(.has-text-color):hover, 
+body.aft-default-mode .is-style-outline a.wp-block-button__link:not(.has-text-color):hover{
+    color: #0776C6;
+}
+body.aft-dark-mode .is-style-fill a.wp-block-button__link:not(.has-text-color), 
+body.aft-default-mode .is-style-fill a.wp-block-button__link:not(.has-text-color){
+    color: #fff;
+    background-color:#0776C6;
+}
+body.aft-dark-mode .is-style-fill a.wp-block-button__link:not(.has-text-color):hover, 
+body.aft-default-mode .is-style-fill a.wp-block-button__link:not(.has-text-color):hover{
+    color: #fff;
 }
 /* new css will start from here for layouts*/
 
@@ -8241,6 +8325,7 @@ iframe.vid_frame.entry-header-yt-iframe {
 }
 .aft-slick-vertical-carousel.slick-vertical .slick-slide {
     line-height: 1;
+    border: none;
 }
 .layout-4 .aft-main-banner-wrapper .af-editors-pick .em-title-subtitle-wrap ,
 .layout-5 .aft-main-banner-wrapper .af-editors-pick .em-title-subtitle-wrap {
@@ -8451,11 +8536,17 @@ iframe {
     .layout-7 .aft-main-banner .af-banner-carousel-1 .read-img.read-bg-img {
         height: 502px;
     }
+    .layout-7 .aft-main-banner .af-banner-carousel-1{
+        max-height: 404px;
+    }
     .aft-main-banner-wide .layout-9 .af-banner-carousel-1 .read-img.read-bg-img {
         height: 404px;
     }
     .aft-main-banner-wide .layout-8 .aft-main-banner .af-banner-carousel-1 .read-img.read-bg-img{
         height: 493px;
+    }
+    .aft-main-banner-wide .layout-8 .aft-main-banner .af-banner-carousel-1{
+        max-height: 493px;
     }
     body.aft-main-banner-wide .layout-7 .aft-main-banner .banner-carousel-slider.af-banner-carousel-1:not(.default) .read-img.read-bg-img {
         height: 478px;
@@ -8907,6 +8998,31 @@ iframe {
     .layout-8 .aft-main-banner .af-banner-carousel-1 .read-img.read-bg-img, 
     .layout-9 .aft-main-banner .af-banner-carousel-1 .read-img.read-bg-img{
         height: 600px;
+    }
+
+    .aft-main-banner-boxed .layout-9 .aft-main-banner .af-banner-carousel-1,
+    .aft-main-banner-wide .layout-9 .aft-main-banner .af-banner-carousel-1,
+    .aft-main-banner-boxed .layout-8 .aft-main-banner .af-banner-carousel-1,
+    .aft-main-banner-wide .layout-8 .aft-main-banner .af-banner-carousel-1{
+        max-height: 600px;
+    }
+
+    .aft-main-banner-wide .default .trending-posts,
+    .aft-main-banner-wide .layout-2 .trending-posts,
+    .aft-main-banner-wide .layout-3 .trending-posts,
+    .aft-main-banner-boxed .default .trending-posts,
+    .aft-main-banner-boxed .layout-2 .trending-posts,
+    .aft-main-banner-boxed .layout-3 .trending-posts{
+        max-height: 125px;
+    }
+    .layout-5 .af-main-banner-trending-posts-vertical-carousel,
+    .layout-4 .af-main-banner-trending-posts-vertical-carousel{
+        max-height: 120px;
+    }
+    .layout-7 .aft-main-banner .af-banner-carousel-1 ,
+    .layout-5 .aft-main-banner .af-banner-carousel-1 ,
+    .layout-4 .aft-main-banner .af-banner-carousel-1 {
+        max-height: 600px;
     }
     .aft-main-banner-wrapper .col-66,
     .aft-main-banner-wrapper .col-3,

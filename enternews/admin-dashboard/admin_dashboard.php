@@ -164,8 +164,8 @@ if (!class_exists('AF_themes_info')) {
         'enternews', // Parent slug.
         __('Upgrade', 'enternews'), // Page title.
         '<span id="aft-upgrade-menu-item">' . __('Upgrade', 'enternews') .'</span>', // Menu title.
-        capability: 'manage_options', // Capability.
-        menu_slug: esc_url('https://afthemes.com/products/enternews-pro/') // Menu slug.
+        'manage_options', // Capability.
+        esc_url('https://afthemes.com/products/enternews-pro/') // Menu slug.
         
       );
     }

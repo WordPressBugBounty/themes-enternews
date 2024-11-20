@@ -385,8 +385,8 @@ add_filter( 'wp_nav_menu', 'enternews_menu_notitle' );
 add_filter( 'wp_page_menu', 'enternews_menu_notitle' );
 add_filter( 'wp_list_categories', 'enternews_menu_notitle' );
 
-add_action( 'after_setup_theme', 'enternews_transltion_init');
+add_action( 'init', 'enternews_transltion_init');
 
 function enternews_transltion_init() {
-    load_theme_textdomain( 'enternews', false, get_template_directory()  . '/languages' );
+    load_theme_textdomain( 'enternews', get_template_directory()  . '/languages' );
 }

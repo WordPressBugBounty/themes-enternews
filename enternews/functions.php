@@ -279,6 +279,15 @@ $enable_sticky_header_option = enternews_get_option('enable_sticky_header_option
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
 	}
+
+    if (is_rtl() && is_child_theme()) {
+        wp_enqueue_style(
+          'enternews-rtl',
+          get_template_directory_uri() . '/rtl.css',
+          array() // Load after other styles
+    
+        );
+      }
 }
 add_action('wp_enqueue_scripts', 'enternews_scripts');
 
@@ -385,8 +394,8 @@ add_filter( 'wp_nav_menu', 'enternews_menu_notitle' );
 add_filter( 'wp_page_menu', 'enternews_menu_notitle' );
 add_filter( 'wp_list_categories', 'enternews_menu_notitle' );
 
-add_action( 'init', 'enternews_transltion_init');
+add_action( 'after_setup_theme', 'enternews_transltion_init');
 
 function enternews_transltion_init() {
-    load_theme_textdomain( 'enternews', get_template_directory()  . '/languages' );
+    load_theme_textdomain( 'enternews', false, get_template_directory()  . '/languages' );
 }

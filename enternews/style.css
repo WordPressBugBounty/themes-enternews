@@ -4,16 +4,14 @@ Theme URI: https://afthemes.com/products/enternews/
 Author: AF themes
 Author URI: https://www.afthemes.com/
 Description: EnterNews is the best responsive News and Magazine WordPress Theme. To make a fantastic news website, the theme has a number of free starter sites with a single click import. The theme is completely widgetized, empowering users to control site content with 8+ custom widgets and widget areas. Also it includes default and dark color mode, allowing you to present articles and blog posts in a trendy manner. In addition, it comes with a variety of useful customizer options for creating a stunning newsportal. You can design it however you like and preview the changes using live customizer. It works with Gutenberg WordPress blocks and RTL, as well as the WooCommerce plugin, which helps you to combine an online store with our newspaper style. The theme is perfect for a news, newspaper, magazine, publishing, or review platform, and it's also useful for blogging. It's well-designed to get the website to the top of search engines, and users can get excellent assistance from the team if they run into any issues when using the theme. See more demos and documentaion at: https://afthemes.com/products/enternews/
-Requires PHP: 5.6
-Requires at least: 5.3
-WC requires at least: 3.0
-WC tested up to: 9.3
+Requires PHP: 5.3
+Requires at least: 4.0
 Tested up to: 6.7
-Version: 3.1.2
+Version: 3.2.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: enternews
-Tags: news, blog, entertainment, one-column, two-columns, grid-layout, block-styles, left-sidebar, right-sidebar, custom-header, flexible-header, custom-background, custom-colors, custom-menu, featured-images, full-width-template, post-formats, sticky-post, rtl-language-support, footer-widgets, translation-ready, theme-options, threaded-comments
+Tags: news, blog, entertainment, one-column, two-columns, three-columns, four-columns, grid-layout, block-patterns, block-styles, left-sidebar, right-sidebar, custom-header, flexible-header, custom-background, custom-logo, custom-menu, custom-colors, featured-images, full-width-template, post-formats, rtl-language-support, footer-widgets, translation-ready, theme-options, threaded-comments, wide-blocks
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -10087,3 +10085,40 @@ iframe {
     box-sizing: border-box;
 }
 /* for elespare */
+
+/* builder compatible css */
+.vcwb button,
+.fl-builder button{
+    height: unset;
+}
+
+body.full-width-content.aft-pagebuilder-blank-canvas .aft-pagebuilder-page-section>.alignwide,
+.aft-pagebuilder-blank-canvas .aft-pagebuilder-page-section>.alignwide {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+}
+.aft-pagebuilder-blank-canvas .aft-pagebuilder-page-section>:where(:not(.alignleft):not(.alignright):not(.alignfull)),
+.aft-pagebuilder-blank-canvas .aft-pagebuilder-page-section>.aligncenter{
+    max-width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.aft-pagebuilder-page-section > .vce-row-container{
+    max-width: 1250px;
+}
+.aft-pagebuilder-page-section > .elementor,
+.aft-pagebuilder-page-section > .fl-builder-content ,
+.aft-pagebuilder-full-width-content .site-main>.rz-root__container,
+.aft-pagebuilder-full-width-content .site-main>.fl-builder-content {
+    max-width: unset;
+}
+.container-wrapper #primary.aft-pagebuilder-full-width-content {
+    width: 100%;
+    padding: 0;
+}
+/* builder compatible css */

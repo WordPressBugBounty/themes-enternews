@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Breadcrumb Trail
  * Plugin URI:  https://themehybrid.com/plugins/breadcrumb-trail
- * Description: A smart breadcrumb menu plugin embedded with <a href="http://schema.org">Schema.org</a> microdata that can handle variations in site structure more accurately than any other breadcrumb plugin for WordPress. Insert into your theme with the <code>breadcrumb_trail()</code> template tag.
+ * Description: A smart breadcrumb menu plugin embedded with Schema dot org microdata that can handle variations in site structure more accurately than any other breadcrumb plugin for WordPress. Insert into your theme with the <code>breadcrumb_trail()</code> template tag.
  * Version:     1.1.0
  * Author:      Justin Tadlock
  * Author URI:  https://themehybrid.com
@@ -29,7 +29,7 @@ add_action( 'after_setup_theme', 'breadcrumb_trail_theme_setup', 12 );
  */
 function breadcrumb_trail_setup() {
 
-	load_plugin_textdomain( 'enternews', false, trailingslashit( dirname( plugin_basename( __FILE__ ) ) ) . 'lang' );
+	load_plugin_textdomain( 'breadcrumb-trail', false, trailingslashit( dirname( plugin_basename( __FILE__ ) ) ) . 'lang' );
 }
 
 /**
@@ -42,7 +42,7 @@ function breadcrumb_trail_setup() {
  */
 function breadcrumb_trail_theme_setup() {
 
-	if ( ! current_theme_supports( 'enternews' ) )
+	if ( ! current_theme_supports( 'breadcrumb-trail' ) )
 		add_action( 'wp_head', 'breadcrumb_trail_print_styles' );
 }
 

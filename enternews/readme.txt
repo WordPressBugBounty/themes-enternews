@@ -2,7 +2,7 @@
 Contributors: afthemes
 Requires PHP: 5.3
 Tested up to: 6.7
-Stable tag: 3.2.1
+Stable tag: 3.2.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: news, blog, entertainment, one-column, two-columns, grid-layout, block-styles, left-sidebar, right-sidebar, custom-header, flexible-header, custom-background, custom-colors, custom-menu, featured-images, full-width-template, post-formats, sticky-post, rtl-language-support, footer-widgets, translation-ready, theme-options, threaded-comments
@@ -37,6 +37,12 @@ EnterNews is the best responsive News and Magazine WordPress Theme. To make a fa
 EnterNews includes support for Infinite Scroll in Jetpack.
 
 == Change log ==
+== 3.2.2 - Dec 27 2024 =
+* Update - Accessibilty improvement
+* Update - Page builder support
+* Update - Speed optimization
+* Update - Scripts improvements
+
 == 3.2.0 - Dec 13 2024 =
 * New - Accessibilty improvement
 * New - Page builder support

@@ -1,4 +1,10 @@
 ### 3.2.1 - Dec 13 2024
+* Update - Accessibilty improvement
+* Update - Page builder support
+* Update - Speed optimization
+* Update - Scripts improvements
+
+### 3.2.0 - Dec 13 2024
 * New - Accessibilty improvement
 * New - Page builder support
 * New - Blank Canvas template

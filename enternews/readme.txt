@@ -37,7 +37,13 @@ EnterNews is the best responsive News and Magazine WordPress Theme. To make a fa
 EnterNews includes support for Infinite Scroll in Jetpack.
 
 == Change log ==
-== 3.2.2 - Dec 27 2024 =
+== 3.2.2 - Mar 17 2025 =
+* Update - Accessibilty improvement
+* Update - Page builder support
+* Update - Speed optimization
+* Update - Scripts improvements
+
+== 3.2.1 - Dec 27 2024 =
 * Update - Accessibilty improvement
 * Update - Page builder support
 * Update - Speed optimization

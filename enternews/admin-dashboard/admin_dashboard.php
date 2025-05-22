@@ -58,15 +58,16 @@ if (!class_exists('AF_themes_info')) {
     }
 
 
-    function enternews_make_upgrade_link_external() {
-      ?>
+    function enternews_make_upgrade_link_external()
+    {
+?>
       <script type="text/javascript">
-        jQuery(document).ready( function($) {   
-            $('#aft-upgrade-menu-item').parent().attr('target','_blank');               
+        jQuery(document).ready(function($) {
+          $('#aft-upgrade-menu-item').parent().attr('target', '_blank');
         });
-    </script>
-      <?php
-  }
+      </script>
+    <?php
+    }
 
     function enternews_body_classes($classes)
     {
@@ -163,10 +164,10 @@ if (!class_exists('AF_themes_info')) {
       add_submenu_page(
         'enternews', // Parent slug.
         __('Upgrade', 'enternews'), // Page title.
-        '<span id="aft-upgrade-menu-item">' . __('Upgrade', 'enternews') .'</span>', // Menu title.
+        '<span id="aft-upgrade-menu-item">' . __('Upgrade', 'enternews') . '</span>', // Menu title.
         'manage_options', // Capability.
         esc_url('https://afthemes.com/products/enternews-pro/') // Menu slug.
-        
+
       );
     }
 
@@ -220,7 +221,7 @@ if (!class_exists('AF_themes_info')) {
       ?>
         <div id="templatespare-plugin-install-activate" data-class=<?php echo $class; ?>
           current-theme=<?php echo esc_attr($this->theme_slug) ?> install=<?php echo json_encode($install); ?>
-          activate=<?php echo json_encode($activate); ?> page='<?php echo $this->page_slug; ?>'
+          activate=<?php echo json_encode($activate); ?> data-plugin-page='<?php echo $this->page_slug; ?>'
           message='<?php echo $message; ?>' ispro=''></div>
       <?php
       }
@@ -294,7 +295,7 @@ if (!class_exists('AF_themes_info')) {
 
       ?>
         <div id="templatespare-plugin-install-activate" data-class="<?php echo $class; ?>" current-theme='blockspare'
-          install=<?php echo json_encode($install); ?> activate=<?php echo json_encode($activate); ?> page="aft-block-patterns"
+          install=<?php echo json_encode($install); ?> activate=<?php echo json_encode($activate); ?> data-plugin-page="aft-block-patterns"
           message='<?php echo $message; ?>' isPro='<?php echo esc_attr($enternews_blockspare_status); ?>'></div>
 <?php
       }
@@ -365,7 +366,7 @@ if (!class_exists('AF_themes_info')) {
         $class = (!empty($enternews_elespare_verison) && $enternews_elespare_active && $enternews_elespare_verison < $enternews_elespare_old_version)
           ? admin_url('plugins.php')
           : 'false';
-        echo '<div id="templatespare-plugin-install-activate" data-class="' . esc_attr($class) . '" current-theme="elespare" install="' . esc_attr(json_encode($install)) . '" activate="' . esc_attr(json_encode($activate)) . '" page="aft-template-kits" message="' . esc_attr($message) . '" isPro="' . esc_attr($enternews_elespare_status) . '"></div>';
+        echo '<div id="templatespare-plugin-install-activate" data-class="' . esc_attr($class) . '" current-theme="elespare" install="' . esc_attr(json_encode($install)) . '" activate="' . esc_attr(json_encode($activate)) . '" data-plugin-page="aft-template-kits" message="' . esc_attr($message) . '" isPro="' . esc_attr($enternews_elespare_status) . '"></div>';
       }
     }
 

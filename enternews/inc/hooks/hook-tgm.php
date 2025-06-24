@@ -15,11 +15,7 @@ if ( ! function_exists( 'enternews_recommended_plugins' ) ) :
     function enternews_recommended_plugins() {
 
         $plugins = array(
-            array(
-                'name'     => esc_html__( 'AF Companion', 'enternews' ),
-                'slug'     => 'af-companion',
-                'required' => false,
-            ),
+            
             array(
                 'name'     => esc_html__( 'Templatespare', 'enternews' ),
                 'slug'     => 'templatespare',
@@ -33,16 +29,6 @@ if ( ! function_exists( 'enternews_recommended_plugins' ) ) :
             array(
                 'name'     => esc_html__( 'Blockspare', 'enternews' ),
                 'slug'     => 'blockspare',
-                'required' => false,
-            ),
-            array(
-                'name'     => esc_html__( 'Latest Posts Block', 'enternews' ),
-                'slug'     => 'latest-posts-block-lite',
-                'required' => false,
-            ),
-            array(
-                'name'     => esc_html__( 'Magic Content Box', 'enternews' ),
-                'slug'     => 'magic-content-box-lite',
                 'required' => false,
             ),
             array(

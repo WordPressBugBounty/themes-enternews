@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: EnterNews 3.2.2\n"
+"Project-Id-Version: EnterNews 3.3.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/enternews\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-03-17T09:34:51+00:00\n"
+"POT-Creation-Date: 2025-12-23T11:21:44+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.6.0\n"
 "X-Domain: enternews\n"
@@ -42,93 +42,92 @@ msgstr ""
 msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:46
-#: admin-dashboard/admin_dashboard.php:47
-msgid "%s"
-msgstr ""
-
-#: admin-dashboard/admin_dashboard.php:112
 #: admin-dashboard/admin_dashboard.php:113
-msgid "Starter Sites"
+#: admin-dashboard/admin_dashboard.php:114
+msgid "Dashboard"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:122
-#: admin-dashboard/admin_dashboard.php:123
-msgid "Block Patterns"
-msgstr ""
-
-#: admin-dashboard/admin_dashboard.php:132
-#: admin-dashboard/admin_dashboard.php:133
-msgid "Elementor Kits"
-msgstr ""
-
-#: admin-dashboard/admin_dashboard.php:143
-#: admin-dashboard/admin_dashboard.php:144
+#: admin-dashboard/admin_dashboard.php:125
+#: admin-dashboard/admin_dashboard.php:126
 msgid "Customize"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:154
-#: admin-dashboard/admin_dashboard.php:155
-msgid "Settings"
+#: admin-dashboard/admin_dashboard.php:137
+#: admin-dashboard/admin_dashboard.php:138
+msgid "Starter Sites"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:165
-#: admin-dashboard/admin_dashboard.php:166
-#: admin-dashboard/src/components/json/dashboard-content.js:26
-msgid "Upgrade"
+#: admin-dashboard/admin_dashboard.php:147
+#: admin-dashboard/admin_dashboard.php:148
+msgid "Elementor Kits"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:215
+#: admin-dashboard/admin_dashboard.php:157
+#: admin-dashboard/admin_dashboard.php:158
+msgid "Block Patterns"
+msgstr ""
+
+#: admin-dashboard/admin_dashboard.php:170
+#: admin-dashboard/src/components/json/freepro-content.js:420
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: admin-dashboard/admin_dashboard.php:171
+#: inc/customizer/customizer.php:324
+msgid "Upgrade Now"
+msgstr ""
+
+#: admin-dashboard/admin_dashboard.php:220
 msgid "The Templatespare plugin should be updated to the latest version"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:218
+#: admin-dashboard/admin_dashboard.php:223
 msgid "Import a Starter Site, Personalize, and Live it in 3 Easy Steps!"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:287
+#: admin-dashboard/admin_dashboard.php:292
 msgid "Blockspare plugin version should be more than %s."
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:292
+#: admin-dashboard/admin_dashboard.php:297
 msgid "One-click Demo Import, Block Editor Ready, No Code Required! Built with Blockspare."
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:363
+#: admin-dashboard/admin_dashboard.php:368
 msgid "Elespare plugin version should be more than %s."
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:364
+#: admin-dashboard/admin_dashboard.php:369
 msgid "One-click Import, Header/Footer Builder, Multilingual Support! Powered by Elespare."
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:438
+#: admin-dashboard/admin_dashboard.php:443
 msgid "Are you sure you want to install this plugin?"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:439
+#: admin-dashboard/admin_dashboard.php:444
 #: admin-dashboard/rest-api/api-request.php:29
 msgid "Install Now"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:440
+#: admin-dashboard/admin_dashboard.php:445
 #: admin-dashboard/rest-api/api-request.php:74
 #: lib/tgm/class-tgm-plugin-activation.php:2726
 msgid "Activate"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:441
+#: admin-dashboard/admin_dashboard.php:446
 #: admin-dashboard/rest-api/api-request.php:70
 msgid "Activated"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:537
+#: admin-dashboard/admin_dashboard.php:542
 #: admin-dashboard/rest-api/api-request.php:104
 #: admin-dashboard/rest-api/class-admin-notice.php:144
 msgid "Get Starter Sites"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:542
+#: admin-dashboard/admin_dashboard.php:547
 #: admin-dashboard/rest-api/class-admin-notice.php:148
 #: admin-dashboard/src/components/blockspare.demo.js:13
 #: admin-dashboard/src/components/elespare-demo.js:13
@@ -136,7 +135,7 @@ msgstr ""
 msgid "Get Started"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:543
+#: admin-dashboard/admin_dashboard.php:548
 #: admin-dashboard/rest-api/class-admin-notice.php:149
 msgid "The \"Get Started\" action will install/activate the Templatespare and Blockspare plugins for Starter Sites and Templates."
 msgstr ""
@@ -150,23 +149,25 @@ msgid "More Details"
 msgstr ""
 
 #: admin-dashboard/rest-api/class-admin-notice.php:163
-msgid "Howdy!"
+msgid "👋 Welcome, and Thank You!"
 msgstr ""
 
 #: admin-dashboard/rest-api/class-admin-notice.php:165
-msgid "%s is now installed and ready to use. We've assembled some links to get you started."
+msgid "%s is now active. We're here to help you turn your ideas into a beautiful, professional website — quickly and confidently."
+msgstr ""
+
+#: admin-dashboard/rest-api/class-admin-notice.php:197
+msgid "🚀 Start With One Click"
 msgstr ""
 
 #: admin-dashboard/rest-api/class-admin-notice.php:198
-msgid "Explore Our Pre-Built Starter Websites!"
-msgstr ""
-
-#: admin-dashboard/rest-api/class-admin-notice.php:199
-msgid "Let your imagination soar! Designed with User-Friendly features, incorporating the Latest Trends and SEO-Friendly Markups. We genuinely appreciate you choosing our theme!"
+msgid ""
+"Choose from 100+ starter sites designed for blogs, magazines, businesses & more.\n"
+"      Setup is simple — no coding required."
 msgstr ""
 
 #: admin-dashboard/rest-api/class-admin-notice.php:203
-msgid "Demos/product"
+msgid "View Demos"
 msgstr ""
 
 #: admin-dashboard/rest-api/class-admin-notice.php:205
@@ -174,17 +175,16 @@ msgid "Theme dashboard"
 msgstr ""
 
 #: admin-dashboard/rest-api/class-admin-notice.php:229
-#: admin-dashboard/src/components/json/sidebar-content.js:4
-msgid "Documentation"
+msgid "🤝 We're Here for You"
 msgstr ""
 
 #: admin-dashboard/rest-api/class-admin-notice.php:230
-#: admin-dashboard/src/components/json/sidebar-content.js:7
-msgid "Please check our full documentation for detailed information on how to setup and customize the theme."
+msgid "Whether you're just starting or customizing your site."
 msgstr ""
 
 #: admin-dashboard/rest-api/class-admin-notice.php:231
-msgid "Docs"
+#: admin-dashboard/src/components/json/sidebar-content.js:4
+msgid "Documentation"
 msgstr ""
 
 #: admin-dashboard/rest-api/class-admin-notice.php:232
@@ -192,12 +192,13 @@ msgid "Videos"
 msgstr ""
 
 #: admin-dashboard/rest-api/class-admin-notice.php:233
-msgid "Blog"
+#: admin-dashboard/src/components/json/sidebar-content.js:10
+#: admin-dashboard/src/components/json/sidebar-content.js:11
+msgid "Support"
 msgstr ""
 
 #: admin-dashboard/rest-api/class-admin-notice.php:234
-#: admin-dashboard/src/components/json/dashboard-content.js:21
-msgid "Rate This Theme"
+msgid "⭐ Rate This Theme"
 msgstr ""
 
 #: admin-dashboard/rest-api/class-ajaxcall.php:10
@@ -416,10 +417,6 @@ msgstr ""
 
 #: inc/customizer/customizer.php:323
 msgid "EnterNews Pro"
-msgstr ""
-
-#: inc/customizer/customizer.php:324
-msgid "Upgrade Now"
 msgstr ""
 
 #: inc/customizer/frontpage-options.php:21
@@ -858,7 +855,7 @@ msgstr ""
 #: inc/hooks/blocks/block-archive-grid.php:57
 #: inc/hooks/blocks/block-archive-list.php:56
 #: template-parts/content-page.php:27
-#: template-parts/content.php:42
+#: template-parts/content.php:59
 msgid "Pages:"
 msgstr ""
 
@@ -916,35 +913,23 @@ msgstr ""
 msgid "Select category color class. You can set appropriate categories color on \"Categories\" section of the theme customizer."
 msgstr ""
 
-#: inc/hooks/hook-tgm.php:19
-msgid "AF Companion"
-msgstr ""
-
-#: inc/hooks/hook-tgm.php:24
+#: inc/hooks/hook-tgm.php:20
 msgid "Templatespare"
 msgstr ""
 
-#: inc/hooks/hook-tgm.php:29
+#: inc/hooks/hook-tgm.php:25
 msgid "Elespare"
 msgstr ""
 
-#: inc/hooks/hook-tgm.php:34
+#: inc/hooks/hook-tgm.php:30
 msgid "Blockspare"
 msgstr ""
 
-#: inc/hooks/hook-tgm.php:39
-msgid "Latest Posts Block"
-msgstr ""
-
-#: inc/hooks/hook-tgm.php:44
-msgid "Magic Content Box"
-msgstr ""
-
-#: inc/hooks/hook-tgm.php:49
+#: inc/hooks/hook-tgm.php:35
 msgid "WP Post Author"
 msgstr ""
 
-#: inc/hooks/hook-tgm.php:54
+#: inc/hooks/hook-tgm.php:40
 msgid "Free Live Chat using 3CX"
 msgstr ""
 
@@ -970,10 +955,12 @@ msgid "Got any support queries?"
 msgstr ""
 
 #: inc/template-functions.php:491
+#: template-parts/content.php:44
 msgid "Previous"
 msgstr ""
 
 #: inc/template-functions.php:492
+#: template-parts/content.php:50
 msgid "Next"
 msgstr ""
 
@@ -1850,16 +1837,9 @@ msgstr ""
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
-#: template-parts/content.php:35
-msgid "<span class=\"em-post-navigation\">Previous</span> %title"
-msgstr ""
-
-#: template-parts/content.php:36
-msgid "<span class=\"em-post-navigation\">Next</span> %title"
-msgstr ""
-
-#: template-parts/content.php:38
-msgid "Continue Reading"
+#. translators: Hidden heading for the post navigation section.
+#: template-parts/content.php:54
+msgid "Post navigation"
 msgstr ""
 
 #: admin-dashboard/src/components/blockspare.demo.js:18
@@ -1916,6 +1896,14 @@ msgstr ""
 
 #: admin-dashboard/src/components/json/dashboard-content.js:17
 msgid "View Documentation"
+msgstr ""
+
+#: admin-dashboard/src/components/json/dashboard-content.js:21
+msgid "Rate This Theme"
+msgstr ""
+
+#: admin-dashboard/src/components/json/dashboard-content.js:26
+msgid "Upgrade"
 msgstr ""
 
 #: admin-dashboard/src/components/json/dashboard-content.js:28
@@ -2254,10 +2242,6 @@ msgstr ""
 msgid "Advance Support"
 msgstr ""
 
-#: admin-dashboard/src/components/json/freepro-content.js:420
-msgid "Upgrade to Pro"
-msgstr ""
-
 #: admin-dashboard/src/components/json/home-content.js:6
 msgid "Set the theme header type, set the colors, spacing, alignment and more."
 msgstr ""
@@ -2334,9 +2318,8 @@ msgstr ""
 msgid "View"
 msgstr ""
 
-#: admin-dashboard/src/components/json/sidebar-content.js:10
-#: admin-dashboard/src/components/json/sidebar-content.js:11
-msgid "Support"
+#: admin-dashboard/src/components/json/sidebar-content.js:7
+msgid "Please check our full documentation for detailed information on how to setup and customize the theme."
 msgstr ""
 
 #: admin-dashboard/src/components/json/sidebar-content.js:13

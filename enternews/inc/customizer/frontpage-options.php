@@ -18,7 +18,7 @@ $default = enternews_get_default_theme_options();
 // Add Frontpage Options Panel.
 $wp_customize->add_panel('frontpage_option_panel',
     array(
-        'title' => esc_html__('Frontpage Options', 'enternews'),
+        'title' => __('Frontpage Options', 'enternews'),
         'priority' => 199,
         'capability' => 'edit_theme_options',
     )
@@ -29,7 +29,7 @@ $wp_customize->add_panel('frontpage_option_panel',
 //=================================
 $wp_customize->add_section('enternews_flash_posts_section_settings',
     array(
-        'title' => esc_html__('Ticker News', 'enternews'),
+        'title' => __('Ticker News', 'enternews'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'frontpage_option_panel',
@@ -46,7 +46,7 @@ $wp_customize->add_setting('show_flash_news_section',
 
 $wp_customize->add_control('show_flash_news_section',
     array(
-        'label' => esc_html__('Enable Ticker News', 'enternews'),
+        'label' => __('Enable Ticker News', 'enternews'),
         'section' => 'enternews_flash_posts_section_settings',
         'type' => 'checkbox',
         'priority' => 22,
@@ -65,7 +65,7 @@ $wp_customize->add_setting('flash_news_title',
 
 $wp_customize->add_control('flash_news_title',
     array(
-        'label' => esc_html__('Exclusive News Title', 'enternews'),
+        'label' => __('Exclusive News Title', 'enternews'),
         'section' => 'enternews_flash_posts_section_settings',
         'type' => 'text',
         'priority' => 23,
@@ -87,8 +87,8 @@ $wp_customize->add_setting('select_flash_news_category',
 
 $wp_customize->add_control(new EnterNews_Dropdown_Taxonomies_Control($wp_customize, 'select_flash_news_category',
     array(
-        'label' => esc_html__('Exclusive Posts Category', 'enternews'),
-        'description' => esc_html__('Posts to be shown on trending posts ', 'enternews'),
+        'label' => __('Exclusive Posts Category', 'enternews'),
+        'description' => __('Posts to be shown on trending posts ', 'enternews'),
         'section' => 'enternews_flash_posts_section_settings',
         'type' => 'dropdown-taxonomies',
         'taxonomy' => 'category',
@@ -106,7 +106,7 @@ $wp_customize->add_control(new EnterNews_Dropdown_Taxonomies_Control($wp_customi
 // Main banner Sider Section.
 $wp_customize->add_section('frontpage_main_banner_section_settings',
     array(
-        'title' => esc_html__('Main Banner', 'enternews'),
+        'title' => __('Main Banner', 'enternews'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'frontpage_option_panel',
@@ -124,7 +124,7 @@ $wp_customize->add_setting('show_main_news_section',
 
 $wp_customize->add_control('show_main_news_section',
     array(
-        'label' => esc_html__('Enable Main Banner', 'enternews'),
+        'label' => __('Enable Main Banner', 'enternews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'checkbox',
         'priority' => 100,
@@ -143,12 +143,12 @@ $wp_customize->add_setting('select_main_banner_section_layout',
 
 $wp_customize->add_control('select_main_banner_section_layout',
     array(
-        'label' => esc_html__('Select Banner Layout', 'enternews'),
+        'label' => __('Select Banner Layout', 'enternews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'select',
         'choices' => array(
-            'wide' => esc_html__("Wide", 'enternews'),
-            'boxed' => esc_html__("Boxed", 'enternews'),
+            'wide' => __("Wide", 'enternews'),
+            'boxed' => __("Boxed", 'enternews'),
         ),
         'priority' => 100,
         'active_callback' => 'enternews_main_banner_section_status'
@@ -170,8 +170,8 @@ $wp_customize->add_setting('main_banner_background_section',
 $wp_customize->add_control(
     new WP_Customize_Cropped_Image_Control($wp_customize, 'main_banner_background_section',
         array(
-            'label' => esc_html__('Main Banner Background Image', 'enternews'),
-            'description' => sprintf(esc_html__('Recommended Size %1$s px X %2$s px', 'enternews'), 1024, 800),
+            'label' => __('Main Banner Background Image', 'enternews'),
+            'description' => sprintf(__('Recommended Size %1$s px X %2$s px', 'enternews'), 1024, 800),
             'section' => 'frontpage_main_banner_section_settings',
             'width' => 1024,
             'height' => 800,
@@ -194,13 +194,13 @@ $wp_customize->add_setting('select_main_banner_section_mode',
 
 $wp_customize->add_control('select_main_banner_section_mode',
     array(
-        'label' => esc_html__('Select Banner Style', 'enternews'),
+        'label' => __('Select Banner Style', 'enternews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'select',
         'choices' => array(
-            'default' => esc_html__("Editor's Pick - Main News - Trending", 'enternews'),
-            'layout-2' => esc_html__("Trending - Main News - Editor's Pick", 'enternews'),
-            'layout-3' => esc_html__("Main News - Editor's Pick - Trending", 'enternews'),
+            'default' => __("Editor's Pick - Main News - Trending", 'enternews'),
+            'layout-2' => __("Trending - Main News - Editor's Pick", 'enternews'),
+            'layout-3' => __("Main News - Editor's Pick - Trending", 'enternews'),
         ),
         'priority' => 100,
         'active_callback' => 'enternews_main_banner_section_status'
@@ -222,7 +222,7 @@ $wp_customize->add_control(
         $wp_customize,
         'editorials_section_title',
         array(
-            'label' => esc_html__('Editorials Section ', 'enternews'),
+            'label' => __('Editorials Section ', 'enternews'),
             'section' => 'frontpage_main_banner_section_settings',
             'priority' => 100,
             'active_callback' => function ($control) {
@@ -247,7 +247,7 @@ $wp_customize->add_setting('editors_pick_section_title',
 );
 $wp_customize->add_control('editors_pick_section_title',
     array(
-        'label' => esc_html__('Section Title', 'enternews'),
+        'label' => __('Section Title', 'enternews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'text',
         'priority' => 100,
@@ -272,8 +272,8 @@ $wp_customize->add_setting('select_editors_pick_category',
 
 $wp_customize->add_control(new EnterNews_Dropdown_Taxonomies_Control($wp_customize, 'select_editors_pick_category',
     array(
-        'label' => esc_html__('Category', 'enternews'),
-        'description' => esc_html__('Posts to be shown on Editorials slider section', 'enternews'),
+        'label' => __('Category', 'enternews'),
+        'description' => __('Posts to be shown on Editorials slider section', 'enternews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'dropdown-taxonomies',
         'taxonomy' => 'category',
@@ -300,7 +300,7 @@ $wp_customize->add_control(
         $wp_customize,
         'main_banner_section_title',
         array(
-            'label' => esc_html__('Main Slider Section ', 'enternews'),
+            'label' => __('Main Slider Section ', 'enternews'),
             'section' => 'frontpage_main_banner_section_settings',
             'priority' => 100,
             'active_callback' => function ($control) {
@@ -325,7 +325,7 @@ $wp_customize->add_setting('main_banner_section_label',
 );
 $wp_customize->add_control('main_banner_section_label',
     array(
-        'label' => esc_html__('Section Title', 'enternews'),
+        'label' => __('Section Title', 'enternews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'text',
         'priority' => 100,
@@ -353,8 +353,8 @@ $wp_customize->add_setting('select_slider_news_category',
 
 $wp_customize->add_control(new EnterNews_Dropdown_Taxonomies_Control($wp_customize, 'select_slider_news_category',
     array(
-        'label' => esc_html__('Category', 'enternews'),
-        'description' => esc_html__('Posts to be shown on Main News Slider', 'enternews'),
+        'label' => __('Category', 'enternews'),
+        'description' => __('Posts to be shown on Main News Slider', 'enternews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'dropdown-taxonomies',
         'taxonomy' => 'category',
@@ -383,7 +383,7 @@ $wp_customize->add_control(
         $wp_customize,
         'trending_carousel_section_title',
         array(
-            'label' => esc_html__('Trending Section ', 'enternews'),
+            'label' => __('Trending Section ', 'enternews'),
             'section' => 'frontpage_main_banner_section_settings',
             'priority' => 100,
             'active_callback' => function ($control) {
@@ -408,7 +408,7 @@ $wp_customize->add_setting('trending_slider_title',
 );
 $wp_customize->add_control('trending_slider_title',
     array(
-        'label' => esc_html__('Section Title', 'enternews'),
+        'label' => __('Section Title', 'enternews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'text',
         'priority' => 100,
@@ -438,8 +438,8 @@ $wp_customize->add_setting('select_trending_carousel_category',
 
 $wp_customize->add_control(new EnterNews_Dropdown_Taxonomies_Control($wp_customize, 'select_trending_carousel_category',
     array(
-        'label' => esc_html__('Category', 'enternews'),
-        'description' => esc_html__('Posts to be shown on Trending slider section', 'enternews'),
+        'label' => __('Category', 'enternews'),
+        'description' => __('Posts to be shown on Trending slider section', 'enternews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'dropdown-taxonomies',
         'taxonomy' => 'category',
@@ -470,7 +470,7 @@ $wp_customize->add_setting('disable_main_banner_on_blog_archive',
 
 $wp_customize->add_control('disable_main_banner_on_blog_archive',
     array(
-        'label' => esc_html__('Disable Main Banner section on Static Posts page', 'enternews'),
+        'label' => __('Disable Main Banner section on Static Posts page', 'enternews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'checkbox',
         'priority' => 111,
@@ -486,7 +486,7 @@ $wp_customize->add_control('disable_main_banner_on_blog_archive',
 // Main banner Sider Section.
 $wp_customize->add_section('frontpage_featured_section_settings',
     array(
-        'title' => esc_html__('Featured News', 'enternews'),
+        'title' => __('Featured News', 'enternews'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'frontpage_option_panel',
@@ -504,7 +504,7 @@ $wp_customize->add_setting('show_featured_news_section',
 
 $wp_customize->add_control('show_featured_news_section',
     array(
-        'label' => esc_html__('Enable Featured News', 'enternews'),
+        'label' => __('Enable Featured News', 'enternews'),
         'section' => 'frontpage_featured_section_settings',
         'type' => 'checkbox',
         'priority' => 100,
@@ -522,7 +522,7 @@ $wp_customize->add_setting('featured_news_section_title',
 );
 $wp_customize->add_control('featured_news_section_title',
     array(
-        'label' => esc_html__('Section Title', 'enternews'),
+        'label' => __('Section Title', 'enternews'),
         'section' => 'frontpage_featured_section_settings',
         'type' => 'text',
         'priority' => 100,
@@ -546,8 +546,8 @@ $wp_customize->add_setting('select_featured_news_category',
 
 $wp_customize->add_control(new EnterNews_Dropdown_Taxonomies_Control($wp_customize, 'select_featured_news_category',
     array(
-        'label' => esc_html__('Category', 'enternews'),
-        'description' => esc_html__('Posts to be shown on featured news section', 'enternews'),
+        'label' => __('Category', 'enternews'),
+        'description' => __('Posts to be shown on featured news section', 'enternews'),
         'section' => 'frontpage_featured_section_settings',
         'type' => 'dropdown-taxonomies',
         'taxonomy' => 'category',
@@ -567,7 +567,7 @@ $wp_customize->add_control(new EnterNews_Dropdown_Taxonomies_Control($wp_customi
 // Frontpage Layout Section.
 $wp_customize->add_section('frontpage_layout_settings',
     array(
-        'title' => esc_html__('Frontpage Layout Settings', 'enternews'),
+        'title' => __('Frontpage Layout Settings', 'enternews'),
         'priority' => 10,
         'capability' => 'edit_theme_options',
         'panel' => 'frontpage_option_panel',
@@ -586,13 +586,13 @@ $wp_customize->add_setting('frontpage_content_type',
 
 $wp_customize->add_control('frontpage_content_type',
     array(
-        'label' => esc_html__('Frontpage Content Display', 'enternews'),
-        'description' => esc_html__('Select frontpage content display', 'enternews'),
+        'label' => __('Frontpage Content Display', 'enternews'),
+        'description' => __('Select frontpage content display', 'enternews'),
         'section' => 'frontpage_layout_settings',
         'type' => 'select',
         'choices' => array(
-            'frontpage-widgets' => esc_html__('Frontpage Widgets', 'enternews'),
-            'frontpage-widgets-and-content' => esc_html__('Page Contents & Frontpage Widgets', 'enternews'),            
+            'frontpage-widgets' => __('Frontpage Widgets', 'enternews'),
+            'frontpage-widgets-and-content' => __('Page Contents & Frontpage Widgets', 'enternews'),            
         ),
         'priority' => 10,
     ));
@@ -611,14 +611,14 @@ $wp_customize->add_setting('frontpage_content_alignment',
 
 $wp_customize->add_control('frontpage_content_alignment',
     array(
-        'label' => esc_html__('Frontpage Content Position', 'enternews'),
-        'description' => esc_html__('Select frontpage content alignment', 'enternews'),
+        'label' => __('Frontpage Content Position', 'enternews'),
+        'description' => __('Select frontpage content alignment', 'enternews'),
         'section' => 'frontpage_layout_settings',
         'type' => 'select',
         'choices' => array(
-            'frontpage-layout-1' => esc_html__('Content - Sidebar', 'enternews'),
-            'frontpage-layout-2' => esc_html__('Sidebar - Content', 'enternews'),
-            'frontpage-layout-3' => esc_html__('Full Content', 'enternews')
+            'frontpage-layout-1' => __('Content - Sidebar', 'enternews'),
+            'frontpage-layout-2' => __('Sidebar - Content', 'enternews'),
+            'frontpage-layout-3' => __('Full Content', 'enternews')
         ),
         'priority' => 10,
     ));
@@ -634,7 +634,7 @@ $wp_customize->add_setting('frontpage_sticky_sidebar',
 
 $wp_customize->add_control('frontpage_sticky_sidebar',
     array(
-        'label' => esc_html__('Make Frontpage Sidebar Sticky', 'enternews'),
+        'label' => __('Make Frontpage Sidebar Sticky', 'enternews'),
         'section' => 'frontpage_layout_settings',
         'type' => 'checkbox',
         'priority' => 10,

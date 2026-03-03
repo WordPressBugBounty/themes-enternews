@@ -26,7 +26,7 @@ $wp_customize->add_control(
         $wp_customize,
         'secondary_color',
         array(
-            'label' => esc_html__('Secondary Color', 'enternews'),
+            'label' => __('Secondary Color', 'enternews'),
             'section' => 'colors',
             'type' => 'color',
             'priority' => 5
@@ -38,7 +38,7 @@ $wp_customize->add_control(
 // font Section.
 $wp_customize->add_section('font_typo_section',
     array(
-        'title' => esc_html__('Fonts & Typography', 'enternews'),
+        'title' => __('Fonts & Typography', 'enternews'),
         'priority' => 10,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -60,7 +60,7 @@ $wp_customize->add_setting('primary_font',
 );
 $wp_customize->add_control('primary_font',
     array(
-        'label' => esc_html__('Primary Font', 'enternews'),
+        'label' => __('Primary Font', 'enternews'),
         'section' => 'font_typo_section',
         'type' => 'select',
         'choices' => $enternews_google_fonts,
@@ -78,7 +78,7 @@ $wp_customize->add_setting('secondary_font',
 );
 $wp_customize->add_control('secondary_font',
     array(
-        'label' => esc_html__('Secondary Font', 'enternews'),
+        'label' => __('Secondary Font', 'enternews'),
         'section' => 'font_typo_section',
         'type' => 'select',
         'choices' => $enternews_google_fonts,
@@ -96,7 +96,7 @@ $wp_customize->add_setting('tertiary_font',
 );
 $wp_customize->add_control('tertiary_font',
     array(
-        'label' => esc_html__('Tertiary Font', 'enternews'),
+        'label' => __('Tertiary Font', 'enternews'),
         'section' => 'font_typo_section',
         'type' => 'select',
         'choices' => $enternews_google_fonts,
@@ -108,7 +108,7 @@ $wp_customize->add_control('tertiary_font',
 // Add Theme Options Panel.
 $wp_customize->add_panel('theme_option_panel',
     array(
-        'title' => esc_html__('Theme Options', 'enternews'),
+        'title' => __('Theme Options', 'enternews'),
         'priority' => 200,
         'capability' => 'edit_theme_options',
     )
@@ -118,7 +118,7 @@ $wp_customize->add_panel('theme_option_panel',
 // Preloader Section.
 $wp_customize->add_section('site_preloader_settings',
     array(
-        'title' => esc_html__('Preloader Options', 'enternews'),
+        'title' => __('Preloader Options', 'enternews'),
         'priority' => 4,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -136,7 +136,7 @@ $wp_customize->add_setting('enable_site_preloader',
 
 $wp_customize->add_control('enable_site_preloader',
     array(
-        'label' => esc_html__('Enable preloader', 'enternews'),
+        'label' => __('Enable preloader', 'enternews'),
         'section' => 'site_preloader_settings',
         'type' => 'checkbox',
         'priority' => 10,
@@ -147,7 +147,7 @@ $wp_customize->add_control('enable_site_preloader',
 // Breadcrumb Section.
 $wp_customize->add_section('site_breadcrumb_settings',
     array(
-        'title'      => esc_html__('Breadcrumb Options', 'enternews'),
+        'title'      => __('Breadcrumb Options', 'enternews'),
         'priority'   => 50,
         'capability' => 'edit_theme_options',
         'panel'      => 'theme_option_panel',
@@ -165,7 +165,7 @@ $wp_customize->add_setting('enable_breadcrumb',
 
 $wp_customize->add_control('enable_breadcrumb',
     array(
-        'label'    => esc_html__('Show breadcrumbs', 'enternews'),
+        'label'    => __('Show breadcrumbs', 'enternews'),
         'section'  => 'site_breadcrumb_settings',
         'type'     => 'checkbox',
         'priority' => 10,
@@ -184,15 +184,15 @@ $wp_customize->add_setting('select_breadcrumb_mode',
 
 $wp_customize->add_control( 'select_breadcrumb_mode',
     array(
-        'label'       => esc_html__('Select Breadcrumbs', 'enternews'),
-        'description' => esc_html__("Please ensure that you have enabled the plugin's breadcrumbs before choosing other than Default", 'enternews'),
+        'label'       => __('Select Breadcrumbs', 'enternews'),
+        'description' => __("Please ensure that you have enabled the plugin's breadcrumbs before choosing other than Default", 'enternews'),
         'section'     => 'site_breadcrumb_settings',
         'type'        => 'select',
         'choices'               => array(
-            'default' => esc_html__( 'Default', 'enternews' ),
-            'yoast' => esc_html__( 'Yoast SEO', 'enternews' ),
-            'rankmath' => esc_html__( 'Rank Math', 'enternews' ),
-            'bcn' => esc_html__( 'NavXT', 'enternews' ),
+            'default' => __( 'Default', 'enternews' ),
+            'yoast' => __( 'Yoast SEO', 'enternews' ),
+            'rankmath' => __( 'Rank Math', 'enternews' ),
+            'bcn' => __( 'NavXT', 'enternews' ),
         ),
         'priority'    => 100,
     ));
@@ -206,7 +206,7 @@ $wp_customize->add_control( 'select_breadcrumb_mode',
 // Layout Section.
     $wp_customize->add_section('site_layout_settings',
         array(
-            'title' => esc_html__('Global Settings', 'enternews'),
+            'title' => __('Global Settings', 'enternews'),
             'priority' => 9,
             'capability' => 'edit_theme_options',
             'panel' => 'theme_option_panel',
@@ -225,13 +225,13 @@ $wp_customize->add_control( 'select_breadcrumb_mode',
     
     $wp_customize->add_control('global_content_alignment',
         array(
-            'label' => esc_html__('Global Content Alignment', 'enternews'),
+            'label' => __('Global Content Alignment', 'enternews'),
             'section' => 'site_layout_settings',
             'type' => 'select',
             'choices' => array(
-                'align-content-left' => esc_html__('Content - Primary sidebar', 'enternews'),
-                'align-content-right' => esc_html__('Primary sidebar - Content', 'enternews'),
-                'full-width-content' => esc_html__('Full width content', 'enternews')
+                'align-content-left' => __('Content - Primary sidebar', 'enternews'),
+                'align-content-right' => __('Primary sidebar - Content', 'enternews'),
+                'full-width-content' => __('Full width content', 'enternews')
             ),
             'priority' => 130,
         ));
@@ -247,12 +247,12 @@ $wp_customize->add_control( 'select_breadcrumb_mode',
     
     $wp_customize->add_control('global_show_categories',
         array(
-            'label' => esc_html__('Post Categories', 'enternews'),
+            'label' => __('Post Categories', 'enternews'),
             'section' => 'site_layout_settings',
             'type' => 'select',
             'choices' => array(
-                'yes' => esc_html__('Show', 'enternews'),
-                'no' => esc_html__('Hide', 'enternews'),
+                'yes' => __('Show', 'enternews'),
+                'no' => __('Hide', 'enternews'),
             
             ),
             'priority' => 130,
@@ -270,12 +270,12 @@ $wp_customize->add_control( 'select_breadcrumb_mode',
     
     $wp_customize->add_control('global_widget_excerpt_setting',
         array(
-            'label' => esc_html__('Widget Excerpt Mode', 'enternews'),
+            'label' => __('Widget Excerpt Mode', 'enternews'),
             'section' => 'site_layout_settings',
             'type' => 'select',
             'choices' => array(
-                'trimmed-content' => esc_html__('Trimmed Content', 'enternews'),
-                'default-excerpt' => esc_html__('Default Excerpt', 'enternews'),
+                'trimmed-content' => __('Trimmed Content', 'enternews'),
+                'default-excerpt' => __('Default Excerpt', 'enternews'),
             
             ),
             'priority' => 130,
@@ -291,7 +291,7 @@ $wp_customize->add_control( 'select_breadcrumb_mode',
 // Frontpage Section.
     $wp_customize->add_section('header_options_settings',
         array(
-            'title' => esc_html__('Header Options', 'enternews'),
+            'title' => __('Header Options', 'enternews'),
             'priority' => 49,
             'capability' => 'edit_theme_options',
             'panel' => 'theme_option_panel',
@@ -309,7 +309,7 @@ $wp_customize->add_control( 'select_breadcrumb_mode',
     );
     $wp_customize->add_control('show_date_section',
         array(
-            'label' => esc_html__('Show date on top header', 'enternews'),
+            'label' => __('Show date on top header', 'enternews'),
             'section' => 'header_options_settings',
             'type' => 'checkbox',
             'priority' => 10
@@ -327,7 +327,7 @@ $wp_customize->add_control( 'select_breadcrumb_mode',
     );
     $wp_customize->add_control('enable_sticky_header_option',
         array(
-            'label' => esc_html__('Enable Sticky Header', 'enternews'),
+            'label' => __('Enable Sticky Header', 'enternews'),
             'section' => 'header_options_settings',
             'type' => 'checkbox',
             'priority' => 11
@@ -345,12 +345,12 @@ $wp_customize->add_setting('global_show_home_menu',
 
 $wp_customize->add_control('global_show_home_menu',
     array(
-        'label' => esc_html__('Show Home Menu Icon', 'enternews'),
+        'label' => __('Show Home Menu Icon', 'enternews'),
         'section' => 'header_options_settings',
         'type' => 'select',
         'choices' => array(
-            'yes' => esc_html__('Show', 'enternews'),
-            'no' => esc_html__('Hide', 'enternews'),
+            'yes' => __('Show', 'enternews'),
+            'no' => __('Hide', 'enternews'),
 
         ),
         'priority' => 11,
@@ -373,7 +373,7 @@ $wp_customize->add_control(
         $wp_customize,
         'custom_link_section_title',
         array(
-            'label' => esc_html__('Custom Link Section ', 'enternews'),
+            'label' => __('Custom Link Section ', 'enternews'),
             'section' => 'header_options_settings',
             'priority' => 100,
 
@@ -392,7 +392,7 @@ $wp_customize->add_setting('show_watch_online_section',
 
 $wp_customize->add_control('show_watch_online_section',
     array(
-        'label' => esc_html__('Enable Watch Online Section', 'enternews'),
+        'label' => __('Enable Watch Online Section', 'enternews'),
         'section' => 'header_options_settings',
         'type' => 'checkbox',
         'priority' => 100,
@@ -413,7 +413,7 @@ $wp_customize->add_setting('aft_custom_title',
 );
 $wp_customize->add_control('aft_custom_title',
     array(
-        'label' => esc_html__('Title', 'enternews'),
+        'label' => __('Title', 'enternews'),
         'section' => 'header_options_settings',
         'type' => 'text',
         'priority' => 130,
@@ -431,7 +431,7 @@ $wp_customize->add_setting('aft_custom_link',
 );
 $wp_customize->add_control('aft_custom_link',
     array(
-        'label' => esc_html__('Button Link', 'enternews'),
+        'label' => __('Button Link', 'enternews'),
         'section' => 'header_options_settings',
         'type' => 'text',
         'priority' => 130,
@@ -448,7 +448,7 @@ $wp_customize->add_control('aft_custom_link',
 // Sidebar Section.
 $wp_customize->add_section('site_sidebar_settings',
     array(
-        'title'      => esc_html__('Sidebar Settings', 'enternews'),
+        'title'      => __('Sidebar Settings', 'enternews'),
         'priority'   => 50,
         'capability' => 'edit_theme_options',
         'panel'      => 'theme_option_panel',
@@ -466,7 +466,7 @@ $wp_customize->add_setting('frontpage_sticky_sidebar',
 
 $wp_customize->add_control('frontpage_sticky_sidebar',
     array(
-        'label'    => esc_html__('Make Sidebar Sticky', 'enternews'),
+        'label'    => __('Make Sidebar Sticky', 'enternews'),
         'section'  => 'site_sidebar_settings',
         'type'     => 'checkbox',
         'priority' => 130,
@@ -485,12 +485,12 @@ $wp_customize->add_setting('frontpage_sticky_sidebar_position',
 
 $wp_customize->add_control( 'frontpage_sticky_sidebar_position',
     array(
-        'label'       => esc_html__('Sidebar Sticky Position', 'enternews'),
+        'label'       => __('Sidebar Sticky Position', 'enternews'),
         'section'     => 'site_sidebar_settings',
         'type'        => 'select',
         'choices'               => array(
-            'sidebar-sticky-top' => esc_html__( 'Top', 'enternews' ),
-            'sidebar-sticky-bottom' => esc_html__( 'Bottom', 'enternews' ),
+            'sidebar-sticky-top' => __( 'Top', 'enternews' ),
+            'sidebar-sticky-bottom' => __( 'Bottom', 'enternews' ),
         ),
         'priority'    => 130,
         //'active_callback' => 'frontpage_sticky_sidebar_status'
@@ -506,7 +506,7 @@ $wp_customize->add_control( 'frontpage_sticky_sidebar_position',
 // Global Section.
 $wp_customize->add_section('site_comment_count_settings',
     array(
-        'title' => esc_html__('Comment Count', 'enternews'),
+        'title' => __('Comment Count', 'enternews'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -524,12 +524,12 @@ $wp_customize->add_setting('global_show_comment_count',
 
 $wp_customize->add_control('global_show_comment_count',
     array(
-        'label' => esc_html__('Comment Count', 'enternews'),
+        'label' => __('Comment Count', 'enternews'),
         'section' => 'site_comment_count_settings',
         'type' => 'select',
         'choices' => array(
-            'yes' => esc_html__('Show', 'enternews'),
-            'no' => esc_html__('Hide', 'enternews'),
+            'yes' => __('Show', 'enternews'),
+            'no' => __('Hide', 'enternews'),
 
         ),
         'priority' => 130,
@@ -543,7 +543,7 @@ $wp_customize->add_control('global_show_comment_count',
 // Global Section.
 $wp_customize->add_section('site_min_read_settings',
     array(
-        'title' => esc_html__('Minutes Read Count', 'enternews'),
+        'title' => __('Minutes Read Count', 'enternews'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -562,12 +562,12 @@ $wp_customize->add_setting('global_show_min_read',
 
 $wp_customize->add_control('global_show_min_read',
     array(
-        'label' => esc_html__('Minutes Read Count', 'enternews'),
+        'label' => __('Minutes Read Count', 'enternews'),
         'section' => 'site_min_read_settings',
         'type' => 'select',
         'choices' => array(
-            'yes' => esc_html__('Show', 'enternews'),
-            'no' => esc_html__('Hide', 'enternews'),
+            'yes' => __('Show', 'enternews'),
+            'no' => __('Hide', 'enternews'),
 
         ),
         'priority' => 130,
@@ -580,7 +580,7 @@ $wp_customize->add_control('global_show_min_read',
 // Global Section.
 $wp_customize->add_section('site_post_date_author_settings',
     array(
-        'title' => esc_html__('Date and Author', 'enternews'),
+        'title' => __('Date and Author', 'enternews'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -599,12 +599,12 @@ $wp_customize->add_setting('global_post_date_author_setting',
 
 $wp_customize->add_control('global_post_date_author_setting',
     array(
-        'label' => esc_html__('Date and Author', 'enternews'),
+        'label' => __('Date and Author', 'enternews'),
         'section' => 'site_post_date_author_settings',
         'type' => 'select',
         'choices' => array(
-            'show-date-author' => esc_html__('Show Date and Author', 'enternews'),
-            'hide-date-author' => esc_html__('Hide All', 'enternews'),
+            'show-date-author' => __('Show Date and Author', 'enternews'),
+            'hide-date-author' => __('Hide All', 'enternews'),
         ),
         'priority' => 130,
     ));
@@ -614,7 +614,7 @@ $wp_customize->add_control('global_post_date_author_setting',
 // Single Section.
 $wp_customize->add_section('site_single_posts_settings',
     array(
-        'title' => esc_html__('Single Post', 'enternews'),
+        'title' => __('Single Post', 'enternews'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -644,7 +644,7 @@ $wp_customize->add_control('single_show_featured_image',
 // Single Section.
 $wp_customize->add_section('site_single_related_posts_settings',
     array(
-        'title' => esc_html__('Related Posts', 'enternews'),
+        'title' => __('Related Posts', 'enternews'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -698,7 +698,7 @@ $wp_customize->add_control('single_related_posts_title',
 // Archive Section.
 $wp_customize->add_section('site_archive_settings',
     array(
-        'title' => esc_html__('Archive Settings', 'enternews'),
+        'title' => __('Archive Settings', 'enternews'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -716,13 +716,13 @@ $wp_customize->add_setting('archive_layout',
 
 $wp_customize->add_control('archive_layout',
     array(
-        'label' => esc_html__('Archive layout', 'enternews'),
-        'description' => esc_html__('Select layout for archive', 'enternews'),
+        'label' => __('Archive layout', 'enternews'),
+        'description' => __('Select layout for archive', 'enternews'),
         'section' => 'site_archive_settings',
         'type' => 'select',
         'choices' => array(
-            'archive-layout-list' => esc_html__('List', 'enternews'),
-            'archive-layout-grid' => esc_html__('Grid', 'enternews'),
+            'archive-layout-list' => __('List', 'enternews'),
+            'archive-layout-grid' => __('Grid', 'enternews'),
         ),
         'priority' => 130,
     ));
@@ -738,13 +738,13 @@ $wp_customize->add_setting('archive_image_alignment_list',
 
 $wp_customize->add_control('archive_image_alignment_list',
     array(
-        'label' => esc_html__('Image alignment', 'enternews'),
-        'description' => esc_html__('Select image alignment for archive', 'enternews'),
+        'label' => __('Image alignment', 'enternews'),
+        'description' => __('Select image alignment for archive', 'enternews'),
         'section' => 'site_archive_settings',
         'type' => 'select',
         'choices' => array(
-            'archive-image-left' => esc_html__('Left', 'enternews'),
-            'archive-image-right' => esc_html__('Right', 'enternews'),
+            'archive-image-left' => __('Left', 'enternews'),
+            'archive-image-right' => __('Right', 'enternews'),
 
         ),
         'priority' => 130,
@@ -763,13 +763,13 @@ $wp_customize->add_setting('archive_image_alignment_grid',
 
 $wp_customize->add_control('archive_image_alignment_grid',
     array(
-        'label' => esc_html__('Image alignment', 'enternews'),
-        'description' => esc_html__('Select image alignment for archive', 'enternews'),
+        'label' => __('Image alignment', 'enternews'),
+        'description' => __('Select image alignment for archive', 'enternews'),
         'section' => 'site_archive_settings',
         'type' => 'select',
         'choices' => array(
-            'archive-image-default' => esc_html__('Default', 'enternews'),
-            'archive-image-up-alternate' => esc_html__('Alternate', 'enternews'),
+            'archive-image-default' => __('Default', 'enternews'),
+            'archive-image-up-alternate' => __('Alternate', 'enternews'),
 
         ),
         'priority' => 130,
@@ -782,7 +782,7 @@ $wp_customize->add_control('archive_image_alignment_grid',
 // Footer Section.
 $wp_customize->add_section('frontpage_latest_posts_settings',
     array(
-        'title' => esc_html__('You May Have Missed', 'enternews'),
+        'title' => __('You May Have Missed', 'enternews'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -817,7 +817,7 @@ $wp_customize->add_setting('frontpage_latest_posts_section_title',
 );
 $wp_customize->add_control('frontpage_latest_posts_section_title',
     array(
-        'label' => esc_html__('Posts Section Title', 'enternews'),
+        'label' => __('Posts Section Title', 'enternews'),
         'section' => 'frontpage_latest_posts_settings',
         'type' => 'text',
         'priority' => 100,
@@ -832,7 +832,7 @@ $wp_customize->add_control('frontpage_latest_posts_section_title',
 // Footer Section.
 $wp_customize->add_section('site_footer_settings',
     array(
-        'title' => esc_html__('Footer', 'enternews'),
+        'title' => __('Footer', 'enternews'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',

@@ -86,7 +86,7 @@ function enternews_customize_register($wp_customize) {
 
     $wp_customize->add_control('site_title_font_size',
         array(
-            'label'    => esc_html__('Site Title Size', 'enternews'),
+            'label'    => __('Site Title Size', 'enternews'),
             'section'  => 'title_tagline',
             'type'     => 'number',
             'priority' => 50,
@@ -108,13 +108,13 @@ function enternews_customize_register($wp_customize) {
 
     $wp_customize->add_control( 'select_header_image_mode',
         array(
-            'label'       => esc_html__('Header Image Mode', 'enternews'),
-            'description'       => esc_html__('Image visibility may vary as per the mode', 'enternews'),
+            'label'       => __('Header Image Mode', 'enternews'),
+            'description'       => __('Image visibility may vary as per the mode', 'enternews'),
             'section'     => 'header_image',
             'type'        => 'select',
             'choices'               => array(
-                'default' => esc_html__( "Set as Background", 'enternews' ),
-                'full' => esc_html__( "Show Full Image", 'enternews' ),
+                'default' => __( "Set as Background", 'enternews' ),
+                'full' => __( "Show Full Image", 'enternews' ),
             ),
             'priority'    => 50
         ));
@@ -130,7 +130,7 @@ function enternews_customize_register($wp_customize) {
 
     $wp_customize->add_control('disable_header_image_tint_overlay',
         array(
-            'label'    => esc_html__('Disable Image Tint/Overlay', 'enternews'),
+            'label'    => __('Disable Image Tint/Overlay', 'enternews'),
             'section'  => 'header_image',
             'type'     => 'checkbox',
             'priority' => 50,
@@ -150,7 +150,7 @@ function enternews_customize_register($wp_customize) {
             $wp_customize,
             'global_color_section_notice',
             array(
-                'description' => esc_html__('Background Color will not be applicable for this mode.', 'enternews'),
+                'description' => __('Background Color will not be applicable for this mode.', 'enternews'),
                 'section' => 'colors',
                 'priority' => 10,
                 'active_callback' => 'enternews_global_site_mode_dark_light_status'
@@ -172,7 +172,7 @@ function enternews_customize_register($wp_customize) {
             $wp_customize,
             'global_site_mode_section_title',
             array(
-                'label' => esc_html__('Site Mode Section ', 'enternews'),
+                'label' => __('Site Mode Section ', 'enternews'),
                 'section' => 'colors',
                 'priority' => 5,
             )
@@ -190,12 +190,12 @@ function enternews_customize_register($wp_customize) {
 
     $wp_customize->add_control('global_site_mode_setting',
         array(
-            'label' => esc_html__('Site Mode', 'enternews'),
+            'label' => __('Site Mode', 'enternews'),
             'section' => 'colors',
             'type' => 'select',
             'choices' => array(
-                'aft-default-mode' => esc_html__('Default', 'enternews'),
-                'aft-dark-mode' => esc_html__('Dark', 'enternews'),
+                'aft-default-mode' => __('Default', 'enternews'),
+                'aft-dark-mode' => __('Dark', 'enternews'),
             ),
             'priority' => 5,
         ));
@@ -213,7 +213,7 @@ function enternews_customize_register($wp_customize) {
             $wp_customize,
             'main_banner_color_section_title',
             array(
-                'label' => esc_html__('Main Banner Color Section ', 'enternews'),
+                'label' => __('Main Banner Color Section ', 'enternews'),
                 'section' => 'frontpage_main_banner_section_settings',
                 'priority' => 110,
             )
@@ -232,7 +232,7 @@ function enternews_customize_register($wp_customize) {
 
     $wp_customize->add_control('select_editors_picks_section_background',
         array(
-            'label' => esc_html__("Editor's Picks", 'enternews'),
+            'label' => __("Editor's Picks", 'enternews'),
             'section' => 'frontpage_main_banner_section_settings',
             'type' => 'select',
             'choices' => array(
@@ -255,7 +255,7 @@ function enternews_customize_register($wp_customize) {
 
     $wp_customize->add_control('enable_container_padding',
         array(
-            'label'    => esc_html__('Enable Container Padding', 'enternews'),
+            'label'    => __('Enable Container Padding', 'enternews'),
             'section'  => 'background_image',
             'type'     => 'checkbox',
             'priority' => 50,
@@ -273,7 +273,7 @@ function enternews_customize_register($wp_customize) {
 
     $wp_customize->add_control('select_main_banner_section_background',
         array(
-            'label' => esc_html__('Main Slider', 'enternews'),
+            'label' => __('Main Slider', 'enternews'),
             'section' => 'frontpage_main_banner_section_settings',
             'type' => 'select',
             'choices' => array(
@@ -296,7 +296,7 @@ function enternews_customize_register($wp_customize) {
 
     $wp_customize->add_control('select_trending_section_background',
         array(
-            'label' => esc_html__('Trending', 'enternews'),
+            'label' => __('Trending', 'enternews'),
             'section' => 'frontpage_main_banner_section_settings',
             'type' => 'select',
             'choices' => array(
@@ -320,8 +320,8 @@ function enternews_customize_register($wp_customize) {
             $wp_customize,
             'theme_upsell',
             array(
-                'title'    => esc_html__( 'EnterNews Pro', 'enternews' ),
-                'pro_text' => esc_html__( 'Upgrade Now', 'enternews' ),
+                'title'    => __( 'EnterNews Pro', 'enternews' ),
+                'pro_text' => __( 'Upgrade Now', 'enternews' ),
                 'pro_url'  => 'https://www.afthemes.com/products/enternews-pro/',
                 'priority'  => 1,
             )

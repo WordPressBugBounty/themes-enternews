@@ -68,7 +68,7 @@ function enternews_get_default_theme_options() {
     $defaults['main_banner_section_label'] = __('Main News', 'enternews');
 
     $defaults['select_main_banner_section_mode'] = 'default';
-    $defaults['select_main_banner_section_layout'] = 'wide';
+    $defaults['select_main_banner_section_layout'] = 'boxed';
     $defaults['main_banner_background_section'] = '';
 
     $defaults['select_editors_picks_section_background'] = 'dark';

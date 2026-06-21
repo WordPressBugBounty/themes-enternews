@@ -161,7 +161,7 @@ if (!class_exists('AF_themes_info')) {
         array($this, 'enternews_render_starter_templates'), // Callback function.
         // $starter_sites_order
       );
-     
+
 
 
       // Our getting started page.
@@ -431,6 +431,8 @@ if (!class_exists('AF_themes_info')) {
           'starter_sites' => get_template_directory_uri() . '/admin-dashboard/assets/images/starter-sites.jpg',
           'block_patterns' => get_template_directory_uri() . '/admin-dashboard/assets/images/block-patterns.jpg',
           'template_kits' => get_template_directory_uri() . '/admin-dashboard/assets/images/template-kits.jpg',
+          'af_companion' => get_template_directory_uri() . '/admin-dashboard/assets/images/af-companion.png',
+          'can_manage_options' => current_user_can('manage_options'),
 
         ]
       );
@@ -495,6 +497,7 @@ if (!class_exists('AF_themes_info')) {
       require_once  get_template_directory() . '/admin-dashboard/rest-api/api-request.php';
       require_once  get_template_directory() . '/admin-dashboard/rest-api/class-admin-notice.php';
       require_once  get_template_directory() . '/admin-dashboard/rest-api/class-ajaxcall.php';
+      require_once  get_template_directory() . '/admin-dashboard/class-af-companion.php';
     }
 
     public function enternews_get_plugins_list_data()

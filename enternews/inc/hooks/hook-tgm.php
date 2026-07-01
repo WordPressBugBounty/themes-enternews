@@ -40,6 +40,16 @@ if ( ! function_exists( 'enternews_recommended_plugins' ) ) :
                 'name'     => esc_html__( 'Free Live Chat using 3CX', 'enternews' ),
                 'slug'     => 'wp-live-chat-support',
                 'required' => false,
+            ),
+            array(
+                'name'     => esc_html__( 'AF Translate', 'enternews' ),
+                'slug'     => 'af-translate',
+                'required' => false,
+            ),
+            array(
+                'name'     => esc_html__( 'AF Companion', 'enternews' ),
+                'slug'     => 'af-companion',
+                'required' => false,
             )
         );
 
